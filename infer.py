@@ -1,5 +1,4 @@
 import pickle
-
 from img2vec_pytorch import Img2Vec
 from PIL import Image
 
@@ -9,7 +8,7 @@ with open('./model.p', 'rb') as f:
 
 img2vec = Img2Vec()
 
-image_path = './data/weather_dataset/val/cloudy/cloudy4.jpg'
+image_path = './example/rain.jpeg'
 
 img = Image.open(image_path)
 

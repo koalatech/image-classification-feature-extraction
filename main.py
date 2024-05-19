@@ -11,7 +11,7 @@ from sklearn.metrics import accuracy_score
 
 img2vec = Img2Vec()
 
-data_dir = './data/weather_dataset'
+data_dir = './dataset2'
 train_dir = os.path.join(data_dir, 'train')
 val_dir = os.path.join(data_dir, 'val')
 
@@ -44,6 +44,6 @@ score = accuracy_score(y_pred, data['validation_labels'])
 print(score)
 
 # save the model
-with open('./model.p', 'wb') as f:
-    pickle.dump(model, f)
-    f.close()
+# with open('./model.p', 'wb') as f:
+#     pickle.dump(model, f)
+#     f.close()
